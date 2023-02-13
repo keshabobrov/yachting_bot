@@ -1,4 +1,5 @@
 function GetUserData() {
-    Telegram.WebApp.showAlert('Alert inside');
+    const data = Telegram.WebApp.initData
+    Telegram.WebApp.showAlert(data.user);
     alert("pressed!")
 }
