@@ -22,9 +22,11 @@ body {
 
 button {
     display: block;
+    box-sizing: border-box;
     padding: 15px;
     width: 100%;
     text-align: left;
+    text-indent: 50px;
     background-color: transparent;
     background-repeat: no-repeat;
     border: 0px solid red;
@@ -47,18 +49,9 @@ button {
     flex-direction: row;
     border: 0px solid fuchsia;
     border-radius: 5px;
-}
-
-.imagebox {
-    margin: auto 10px;
-    width: 40px;
-    height: auto;
-    border: 0px solid blue;
-}
-
-img {
-    width: 100%;
-    height: auto;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 2% 50%;
 }
 
 .arrow {
@@ -81,17 +74,17 @@ img {
 }
 
 #my_teams {
-    background-color: #FFFFFF;
+    background-image: url("src/team_logo.png");
 }
 
-#apply_training_row {
-    background-color: #A352D9;
+#sign_training {
+    background-image: url("src/sign.png");
 }
 
-#trainings_row {
-    background-color: green;
+#statistics {
+    background-image: url("src/history.png");
 }
 
-#feedback_row {
-    background-color: red;
+#feedback {
+    background-image: url("src/feedback.png");
 }
