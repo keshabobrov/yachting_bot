@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFFFF;
+    background-color: #1C1C1D;
 }
 
 .container {
@@ -7,7 +7,8 @@ body {
     margin: 100px auto;
     max-width: 500px;
     border: 0px solid red;
-    background-color: #F2F2F2;
+    background-color: #EBEBF5;
+    /*opacity: 30%;*/
     border-radius: 20px;
 }
 
@@ -30,6 +31,8 @@ button {
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    font-family: system-ui;
+    font-size: 20px;
 }
 
 .buttons {
@@ -55,6 +58,25 @@ button {
 img {
     width: 100%;
     height: auto;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.arrow_div {
+    margin: auto 10px;
+    width: 29px;
+    height: auto;
+    border: 0px solid blue;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 #my_teams {
