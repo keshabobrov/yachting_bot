@@ -6,7 +6,6 @@ body {
     display: flex;
     margin: 100px auto;
     max-width: 500px;
-    border: 0px solid red;
     background-color: #EBEBF5;
     /*opacity: 30%;*/
     border-radius: 10px;
@@ -17,7 +16,6 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    border: 0px solid green;
 }
 
 button {
@@ -27,9 +25,9 @@ button {
     width: 100%;
     text-align: left;
     text-indent: 50px;
+    border: none;
     background-color: transparent;
     background-repeat: no-repeat;
-    border: 0px solid red;
     cursor: pointer;
     overflow: hidden;
     outline: none;
@@ -47,7 +45,6 @@ button {
     display: flex;
     margin-bottom: 10px;
     flex-direction: row;
-    border: 0px solid fuchsia;
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: 40px;
@@ -65,12 +62,10 @@ button {
     margin: auto 10px;
     width: 29px;
     height: auto;
-    border: 0px solid blue;
 }
 
 .right {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
 }
 
 #my_teams {
