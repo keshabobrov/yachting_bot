@@ -1,27 +1,74 @@
 body {
-    background-color: #EFEEF3;
+    background-color: #FFFFFF;
 }
 
 .container {
     display: flex;
-    justify-content: center;
     margin: 100px auto;
-    max-width: 800px;
+    max-width: 500px;
     border: 0px solid red;
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     border-radius: 20px;
 }
 
-.mainMenu :not(:last-child) {
-    margin-bottom: 10px;
+.mainMenu {
+    margin: 20px 15px 10px;
     display: flex;
+    width: 100%;
     flex-direction: column;
+    border: 0px solid green;
 }
 
 button {
     display: block;
     padding: 15px;
-    min-width: 300px;
-    border: 3px solid red;
+    width: 100%;
     text-align: left;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0px solid red;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.buttons {
+    display: block;
+    width: 100%;
+}
+
+.rows {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    border: 0px solid fuchsia;
+    border-radius: 5px;
+}
+
+.imagebox {
+    margin: auto 10px;
+    width: 29px;
+    height: auto;
+    border: 0px solid blue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#my_teams {
+    background-color: #FFFFFF;
+}
+
+#apply_training_row {
+    background-color: #A352D9;
+}
+
+#trainings_row {
+    background-color: green;
+}
+
+#feedback_row {
+    background-color: red;
 }
