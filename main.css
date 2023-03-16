@@ -57,7 +57,8 @@ button {
     border-radius: 20px;
     transition-duration: 0.04s;
     transition-timing-function: ease-in;
-    -webkit-animation: ease-in 0.04s;
+    -webkit-animation-duration: 0.04s;
+    -webkit-animation-timing-function: ease-in;
 }
 
 .arrow {
