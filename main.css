@@ -52,7 +52,7 @@ button {
     -webkit-tap-highlight-color: transparent;
 }
 
-.rows:hover, .rows:active {
+.rows:focus, .rows:active {
     background-color: rgba(126, 126, 133, 0.3);
     border-radius: 20px;
     transition-duration: 0.04s;
