@@ -49,6 +49,14 @@ button {
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: 2% 50%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.rows:active, .rows:active:focus {
+    background-color: rgba(126, 126, 133, 0.3);
+    border-radius: 20px;
+    transition-duration: 0.04s;
+    transition-timing-function: ease-in;
 }
 
 .arrow {
