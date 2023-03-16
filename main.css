@@ -7,15 +7,17 @@ body {
     margin: 100px auto;
     max-width: 500px;
     background-color: #EBEBF5;
-    /*opacity: 30%;*/
     border-radius: 10px;
+    font-family: system-ui;
+    font-size: 20px;
 }
 
-.mainMenu {
+.mainMenu, .registrationForm {
     margin: 20px 15px 10px;
     display: flex;
     width: 100%;
     flex-direction: column;
+    text-align: center;
 }
 
 button {
@@ -32,13 +34,39 @@ button {
     overflow: hidden;
     outline: none;
     color: black;
-    font-family: system-ui;
-    font-size: 20px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    border: none;
+    background-color: #b1c3d5;
+    border-radius: 10px;
+}
+
+.textInput {
+    margin: auto 0;
 }
 
 .buttons {
     display: block;
     width: 100%;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    margin: 40px 10px 0 10px;
+
+}
+
+.inputBoxes {
+    margin: 20px 40px 20px auto;
+    width: 300px;
 }
 
 .rows {
