@@ -36,11 +36,11 @@
     <script>
         $(window).click(function(element) {
             if (element.target.id == "lastName") {
-                console.log(element.target.id)
+                alert(element.target.id)
                 return
             }
             if (document.activeElement == document.getElementById("lastName")) {
-                console.log(document.activeElement)
+                alert(document.activeElement)
                 // document.activeElement.blur()
             }
         });
