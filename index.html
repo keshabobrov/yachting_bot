@@ -28,5 +28,20 @@
             </div>
         </div>
     </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.MainButton.show()
+    </script>
+    <script>
+        $(window).click(function(element) {
+            if (element.target.id == "lastName") {
+                return
+            }
+            if (document.activeElement == document.getElementById("lastName")) {
+                document.activeElement.blur()
+            }
+        });
+    </script>
 </body>
 </html>
