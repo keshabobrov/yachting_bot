@@ -112,3 +112,16 @@ input {
 #feedback {
     background-image: url("src/feedback.png");
 }
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    margin: inherit;
+    padding: 200px 0;
+    max-width: inherit;
+    width: 100%;
+    background-color: inherit;
+    border-radius: 10px;
+    z-index: 1;
+}

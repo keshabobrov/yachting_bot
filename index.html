@@ -12,31 +12,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="registrationForm">
-            <div class="regText">Регистрация</div>
-            <div class="inputBlock">
-                <div class="textInput"><label for="lastName">Фамилия:</label></div>
-                <div class="inputBoxes"><input type="text" id="lastName" name="lastName"></div>
+        <nav class="mainMenu">
+            <div class="rows" id="my_teams">
+                <div class="buttons"><button type="button" onclick="document.getElementById('overlay').style.display = 'flex'">Мои команды</button></div>
+                <div class="arrow_div"><i class="arrow right"></i></div>
             </div>
-            <div class="inputBlock">
-                <div class="textInput"><label for="firstName">Имя:</label></div>
-                <div class="inputBoxes"><input type="text" id="firstName" name="firstName"></div>
+            <div class="rows" id="sign_training">
+                <div class="buttons"><button type="button" onclick="document.getElementById('overlay').style.display = 'flex'">Запись на выход</button></div>
+                <div class="arrow_div"><i class="arrow right"></i></div>
             </div>
-            <div class="inputBlock">
-                <div class="textInput"><label for="middleName">Отчество:</label></div>
-                <div class="inputBoxes"><input type="text" id="middleName" name="middleName"></div>
+            <div class="rows" id="statistics">
+                <div class="buttons"><button type="button" onclick="document.getElementById('overlay').style.display = 'flex'">Мои выходы</button></div>
+                <div class="arrow_div"><i class="arrow right"></i></div>
             </div>
+            <div class="rows" id="feedback">
+                <div class="buttons"><button type="button" onclick="document.getElementById('overlay').style.display = 'flex'">Обратная связь</button></div>
+                <div class="arrow_div"><i class="arrow right"></i></div>
+            </div>
+        </nav>
+        <div class="overlay" id="overlay">
+            Test text
         </div>
     </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        let tg = window.Telegram.WebApp;
-        tg.MainButton.show()
-    </script>
-    <script>
-        $(document).click(function(element) {
-
-        });
-    </script>
 </body>
 </html>
