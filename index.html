@@ -37,13 +37,12 @@
         $(window).click(function(element) {
             if (element.target.id == "lastName") {
                 console.log(element.target.id)
+                return
             }
             if (document.activeElement == document.getElementById("lastName")) {
                 console.log(document.activeElement)
                 // document.activeElement.blur()
             }
-            console.log(element.target.id)
-            console.log(document.activeElement)
         });
     </script>
 </body>
