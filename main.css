@@ -132,24 +132,24 @@ input {
 }
 
 #my_teams {
-    background-image: url("/static/src/team_logo.png");
+    background-image: url("src/team_logo.png");
 }
 
 #enroll_training {
-    background-image: url("/static/src/sign.png");
+    background-image: url("src/sign.png");
 }
 
 #statistics {
-    background-image: url("/static/src/history.png");
+    background-image: url("src/history.png");
 }
 
 #feedback {
-    background-image: url("/static/src/feedback.png");
+    background-image: url("src/feedback.png");
 }
 
 #administration {
     display: none;
-    background-image: url("/static/src/feedback.png");
+    background-image: url("src/feedback.png");
 }
 
 .overlay {
