@@ -13,12 +13,32 @@ body {
     position: relative;
 }
 
-.mainMenu, .registrationForm {
+.mainMenu, .registrationForm, .enroll_menu {
     margin: 20px 15px 10px;
     display: flex;
     width: 100%;
     flex-direction: column;
     text-align: center;
+}
+
+.enroll_menu {
+    width: auto;
+}
+
+.date_picker {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 60px;
+}
+
+#date_picker_text {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#arrow_date_left, #arrow_date_right {
+    padding: 0px 10px;
 }
 
 button {
@@ -41,9 +61,10 @@ button {
 
 input {
     width: 100%;
-    height: 25px;
-    border: none;
-    background-color: #b1c3d5;
+    height: 30px;
+    border: 2px solid red;
+    /*background-color: #b1c3d5;*/
+    background-color: inherit;
     border-radius: 10px;
 }
 
@@ -54,6 +75,13 @@ input {
 .buttons {
     display: block;
     width: 100%;
+}
+
+.submit_button {
+    margin: 10px;
+    display: block;
+    width: 100%;
+    border: 2px solid blue;
 }
 
 .inputBlock {
@@ -92,35 +120,95 @@ input {
     margin: auto 10px;
     width: 29px;
     height: auto;
+    cursor: pointer;
 }
 
 .right {
     transform: rotate(-45deg);
 }
 
-#my_teams {
-    background-image: url("src/team_logo.png");
+.left {
+    transform: rotate(135deg);
 }
 
-#sign_training {
-    background-image: url("src/sign.png");
+#my_teams {
+    background-image: url("/static/src/team_logo.png");
+}
+
+#enroll_training {
+    background-image: url("/static/src/sign.png");
 }
 
 #statistics {
-    background-image: url("src/history.png");
+    background-image: url("/static/src/history.png");
 }
 
 #feedback {
-    background-image: url("src/feedback.png");
+    background-image: url("/static/src/feedback.png");
+}
+
+#administration {
+    display: none;
+    background-image: url("/static/src/feedback.png");
 }
 
 .overlay {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 0;
+    padding-bottom: 100px;
     max-width: inherit;
     width: 100%;
     background-color: inherit;
     border-radius: 10px;
     z-index: 1;
+}
+
+#textbox_enroll_overlay, #textbox_create_overlay {
+    position: absolute;
+    margin-top: 0px;
+    width: 100%;
+    right: 0px;
+}
+
+#create_overlay {
+    width: auto;
+}
+
+table {
+    padding-right: 30px;
+    margin-top: 20px;
+    text-align: left;
+    border-spacing: 0px;
+}
+
+.time_td {
+    padding: 10px;
+    background-color: red;
+}
+
+.trainer_td {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.slots_td {
+    text-align: right;
+}
+
+.create_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.create_form_input {
+    margin: 0px 20px;
+    width: 100%;
+}
+
+.create_form_label {
+    margin: 10px;
+    width: 100%;
+    text-align: left;
 }
