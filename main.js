@@ -213,3 +213,6 @@ function enrollEvent() {
 }
 
 if (window.location.pathname == "/") {appStart()}
+Telegram.WebApp.MainButton.show()
+Telegram.WebApp.MainButton.setText("buy something")
+Telegram.WebApp.BackButton.show()
