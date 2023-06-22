@@ -86,24 +86,24 @@ body {
 }
 
 #my_teams {
-    background-image: url("/static/src/users.png"), url("/static/src/arrow.png");
+    background-image: url("src/users.png"), url("src/arrow.png");
 }
 
 #enroll_training {
-    background-image: url("/static/src/edit.png"), url("/static/src/arrow.png");
+    background-image: url("src/edit.png"), url("src/arrow.png");
 }
 
 #statistics {
-    background-image: url("/static/src/calendar.png"), url("/static/src/arrow.png");
+    background-image: url("src/calendar.png"), url("src/arrow.png");
 }
 
 #feedback {
-    background-image: url("/static/src/message.png"), url("/static/src/arrow.png");
+    background-image: url("src/message.png"), url("src/arrow.png");
 }
 
 #administration {
     display: none;
-    background-image: url("/static/src/settings.png"), url("/static/src/arrow.png");
+    background-image: url("src/settings.png"), url("src/arrow.png");
 }
 
 button {
