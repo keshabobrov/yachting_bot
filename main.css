@@ -39,7 +39,6 @@ body {
     left: calc(-50vw + 50%);
     min-height: 39px;
     border-bottom: 1px solid #676AAA;
-
 }
 
 .header_text {
@@ -73,7 +72,11 @@ body {
     -webkit-tap-highlight-color: rgba(126, 126, 133, 0.3);
 }
 
-#overlay_registration, #overlay_enroll, #overlay_event, #event_creation {
+#overlay_registration {
+    display: flex;
+}
+
+#overlay_enroll, #overlay_event, #event_creation {
     display: none;
 }
 
