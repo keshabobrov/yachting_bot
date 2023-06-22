@@ -1,155 +1,24 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400 700;
+    src: url(src/Montserrat.ttf)
+}
+
 body {
-    background-color: #1C1C1D;
+    background-color: #F2EFEB;
+    margin: 0;
 }
 
-.container {
+.container, .registrationForm {
     display: flex;
-    margin: 100px auto;
-    max-width: 500px;
-    background-color: #EBEBF5;
-    border-radius: 10px;
-    font-family: system-ui;
+    margin: 25px 35px;
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 600;
     font-size: 20px;
+    line-height: 24px;
+    color: #0D0D0D;
     position: relative;
-}
-
-.mainMenu, .registrationForm, .enroll_menu {
-    margin: 20px 15px 10px;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-}
-
-.enroll_menu {
-    width: auto;
-}
-
-.date_picker {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 60px;
-}
-
-#date_picker_text {
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-}
-
-#arrow_date_left, #arrow_date_right {
-    padding: 0px 10px;
-}
-
-button {
-    display: block;
-    box-sizing: border-box;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    text-indent: 50px;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    color: black;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-input {
-    width: 100%;
-    height: 30px;
-    border: 2px solid red;
-    /*background-color: #b1c3d5;*/
-    background-color: inherit;
-    border-radius: 10px;
-}
-
-.textInput {
-    margin: auto 0;
-}
-
-.buttons {
-    display: block;
-    width: 100%;
-}
-
-.submit_button {
-    margin: 10px;
-    display: block;
-    width: 100%;
-    border: 2px solid blue;
-}
-
-.inputBlock {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    width: 100%;
-    margin: 40px 10px 0 10px;
-
-}
-
-.inputBoxes {
-    margin: 10px 40px 10px auto;
-    width: 200px;
-}
-
-.rows {
-    display: flex;
-    margin-bottom: 10px;
-    flex-direction: row;
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    background-size: 40px;
-    background-position: 2% 50%;
-    -webkit-tap-highlight-color: rgba(126, 126, 133, 0.3);
-}
-
-.arrow {
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 4px;
-}
-
-.arrow_div {
-    margin: auto 10px;
-    width: 29px;
-    height: auto;
-    cursor: pointer;
-}
-
-.right {
-    transform: rotate(-45deg);
-}
-
-.left {
-    transform: rotate(135deg);
-}
-
-#my_teams {
-    background-image: url("src/team_logo.png");
-}
-
-#enroll_training {
-    background-image: url("src/sign.png");
-}
-
-#statistics {
-    background-image: url("src/history.png");
-}
-
-#feedback {
-    background-image: url("src/feedback.png");
-}
-
-#administration {
-    display: none;
-    background-image: url("src/feedback.png");
 }
 
 .overlay {
@@ -160,55 +29,116 @@ input {
     padding-bottom: 100px;
     max-width: inherit;
     width: 100%;
-    background-color: inherit;
-    border-radius: 10px;
+    background-color: #F2EFEB;
     z-index: 1;
 }
 
-#textbox_enroll_overlay, #textbox_create_overlay {
-    position: absolute;
-    margin-top: 0px;
-    width: 100%;
-    right: 0px;
+.overlay_header {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    min-height: 39px;
+    border-bottom: 1px solid #676AAA;
 }
 
-#create_overlay {
-    width: auto;
+.header_text {
+    margin-left: 58px;
+    font-weight: 700;
+    color: #676AAA;
 }
 
-table {
-    padding-right: 30px;
-    margin-top: 20px;
-    text-align: left;
-    border-spacing: 0px;
+.inputBlock {
+    margin-bottom: 27px;
 }
 
-.time_td {
-    padding: 10px;
-    background-color: red;
+.textInput {
+    margin-bottom: 10px;
 }
 
-.trainer_td {
-    width: 100%;
-    padding-left: 10px;
-}
-
-.slots_td {
-    text-align: right;
-}
-
-.create_row {
+.mainMenu {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
 }
 
-.create_form_input {
-    margin: 0px 20px;
+.rows, .rows_invisible {
+    display: flex;
+    margin-bottom: 36px;
+    flex-direction: row;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30px, 14px;
+    background-position: 0 50%, 100% 50%;
+    -webkit-tap-highlight-color: rgba(126, 126, 133, 0.3);
+}
+
+#overlay_registration, #overlay_enroll, #overlay_event, #event_creation {
+    display: none;
+}
+
+#notification_indicator {
+    margin: 0 10px 20px auto;
+    max-width: 40px;
+}
+
+#notification_button {
     width: 100%;
 }
 
-.create_form_label {
-    margin: 10px;
+#my_teams {
+    background-image: url("/static/src/users.png"), url("/static/src/arrow.png");
+}
+
+#enroll_training {
+    background-image: url("/static/src/edit.png"), url("/static/src/arrow.png");
+}
+
+#statistics {
+    background-image: url("/static/src/calendar.png"), url("/static/src/arrow.png");
+}
+
+#feedback {
+    background-image: url("/static/src/message.png"), url("/static/src/arrow.png");
+}
+
+#administration {
+    display: none;
+    background-image: url("/static/src/settings.png"), url("/static/src/arrow.png");
+}
+
+button {
+    display: flex;
+    box-sizing: border-box;
+    padding: 2px 0;
     width: 100%;
     text-align: left;
+    text-indent: 46px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: black;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+input {
+    width: 265px;
+    height: 50px;
+    background: none;
+    border: 1px solid #676AAA;
+    border-radius: 10px;
+    color: #0D0D0D;
+    font-size: 15px;
+    font-style: italic;
+    font-family: inherit;
 }
